@@ -1,10 +1,16 @@
-* {
+body {
   margin: 0;
   padding: 0;
   border: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
   background: #333;
+  background-image: url(/assets/data_center.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  display: grid;
+  
 }
 
 .middle {
@@ -30,8 +36,8 @@
 
 .content {
   font-size: 1.5em;
-  color: #999;
-  padding: 6vh 2em 10em 2em;
+  color: white;
+  padding-top: 6vh;
 }
 
 #nav-link {
@@ -53,16 +59,6 @@
   background-color: #111;
 }
 
-.active {
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    128deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(9, 9, 121, 1) 46%,
-    rgba(0, 212, 255, 1) 100%
-  );
-  border-radius: 10px;
-}
 
 .left, .right {
   width: 25%;
@@ -70,6 +66,7 @@
 
 .middle {
   width: 50%;
+  
 }
 
 .column {
@@ -90,10 +87,11 @@
   border-top: solid 0.5px #666;
   text-align: center;
   color: whitesmoke;
-  padding: 5vh;
+  /* padding: 5vh; */
+  position: fixed;
+  
+  margin-top: auto;
+
 }
- .main-image {
-  background-image: url(/assets/data_center.jpeg)
- }
 
 

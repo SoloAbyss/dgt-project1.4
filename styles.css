@@ -4,7 +4,7 @@ body {
   border: 0;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
-  background: #333;
+  background: #111;
   background-image: url(/assets/data_center.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -19,19 +19,19 @@ body {
 }
 
 .navbar {
-  height: 6vh;
+  height: 5.5vh;
   background-color: hsla(200, 100%, 0%, 0.4);
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
-  backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px) brightness(55%);
   border-bottom: solid 0.5px #666;
-  text-align: center;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: transparent;
+  
 }
 
 .content {
@@ -44,13 +44,15 @@ body {
   float: left;
   list-style-type: none;
   font-weight: 500;
+  padding: none;
 }
 
 #nav-link a {
-  display: block;
+  align-content: center;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding-left: 10px;
+  padding-right: 10px;
   text-decoration: none;
   border-radius: 10px;
 }

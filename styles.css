@@ -18,7 +18,7 @@ section {
   justify-content: center;
   min-height: 400px;
   padding: 100px 20vh;
-  height: 100vh;
+  height: 850px;
   width: 100%;
 }
 
@@ -450,3 +450,39 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
 }
+
+/* VV Pricing Cards VV */
+
+.section-1-servers {
+  background-image: url(/assets/Untitled\ design.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 950px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 250px 400px 400px 400px 250px;
+    align-content: center;
+    padding: 10px;
+    top: 100px;
+    column-gap: 50px;
+  }
+  .grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .grid-side {
+    background: transparent;
+  }
+
+  .grid-invis {
+    background: #222;
+  }

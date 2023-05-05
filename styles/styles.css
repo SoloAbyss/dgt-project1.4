@@ -1,26 +1,31 @@
 * {
+  box-sizing: inherit;
   font-family: "Poppins", sans-serif;
-  box-sizing: border-box;
 }
 
 body {
   margin: 0;
+  color: white;
+  background: #222;
   padding: 0;
-  border: 0;
-  box-sizing: border-box;
-  background: #111;
-  background-image: url(/assets/Untitled\ design.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.middle {
-  min-height: 100vh;
-  padding-bottom: 500px;
+section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  padding: 100px 20vh;
+  height: 850px;
+  width: 100%;
+}
+
+.section-1 {
+  background-image: url(/assets/Untitled\ design.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .navbar {
@@ -32,140 +37,91 @@ body {
   width: 100%;
   backdrop-filter: blur(9px) brightness(55%);
   border-bottom: solid 0.5px #666;
-  margin: 0;
-  padding: 0;
+
   overflow: hidden;
-  background-color: transparent;
-  z-index: 10;
+  z-index: 3;
+  text-align: center;
 }
-
-.header-logo {
-  display: block;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
-  pointer-events: none;
-  margin: auto;
-  margin-top: -10px;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-
 
 #nav-link {
   float: left;
   list-style-type: none;
-  font-weight: 500;
-  padding: none;
 }
 
 #nav-link a {
-  align-content: center;
   color: white;
-  text-align: center;
   padding-left: 10px;
   padding-right: 10px;
   text-decoration: none;
-  border-radius: 10px;
+  font-weight: 600;
 }
 
 #nav-link a:hover {
-  background-color: #111;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   transition: all ease 0.5s;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
 #nav-link-sign-in {
   float: right;
   list-style-type: none;
-  font-weight: 500;
-  padding: none;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 #nav-link-sign-in a {
   color: white;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-left: 10px;
+  padding-right: 30px;
   text-decoration: none;
-  border-radius: 10px;
+  font-weight: 600;
 }
 
 #nav-link-sign-in a:hover {
-  background-color: #111;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   transition: all ease 0.5s;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 600;
 }
 
-.left,
-.right {
-  width: 0%;
-}
-
-.middle {
-  width: 100%;
-}
-
-.column {
-  float: left;
-  padding: 10px;
-  height: 300px;
-}
-
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-.start-now-container {
-  display: block;
-  text-align: center;
-  left: -100px;
-  width: 1000px;
-  margin-top: 20%;
-  padding: 5px;
-  border-radius: 10px;
-  margin: auto;
-}
-
-.start-now-text {
-  font-weight: 400;
-  color: white;
-  font-size: 15px;
+.header-logo {
+  position: fixed;
+  top: -6px;
+  width: 65px;
+  height: 65px;
+  left: 920px;
 }
 
 .start-now-statment {
-  text-align: center;
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   font-weight: 800;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 70px;
+  font-size: 60px;
   color: white;
+}
+
+.start-now-text {
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .start-now-btn {
   border-radius: 20px;
   padding: 5px 10px 5px 10px;
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   display: block;
   margin: auto;
   height: 50px;
-  background: rgb(0, 69, 255);
-  background: linear-gradient(
-    156deg,
-    rgba(0, 69, 255, 1) 0%,
-    rgba(114, 32, 255, 1) 35%,
-    rgba(214, 0, 255, 1) 73%
-  );
-  color: white;
-  font-weight: 600;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #444;
+  font-weight: 800;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
 }
@@ -176,6 +132,25 @@ html {
 
 .start-now-btn:hover {
   transform: scale(1.1, 1.1);
+}
+
+.section-2 {
+  background: #111;
+}
+
+.sec2-title {
+  font-size: 60px;
+}
+
+.highlight {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  border-radius: 20px;
+  color: #111;
+}
+
+.sec2-paragraph {
+  text-align: center;
+  font-size: 20px;
 }
 
 :root {
@@ -189,7 +164,6 @@ html {
   gap: 8px;
   max-width: 916px;
   width: calc(100% - 20px);
-  
 }
 
 #cards:hover > .card::after {
@@ -205,9 +179,9 @@ html {
   flex-direction: column;
   position: relative;
   width: 300px;
-  top: 650px;
+  top: 50px;
   margin: auto;
-  left: 5%;
+
   bottom: 100px;
 }
 
@@ -267,7 +241,6 @@ h3,
 h4,
 span {
   color: rgb(240, 240, 240);
-  font-family: "Poppins", sans-serif;
   font-weight: 600;
   margin: 0px;
 }
@@ -377,35 +350,108 @@ i {
   }
 }
 
+.section-3 {
+  background: #222;
+}
 
+.section-4 {
+  background: #222;
+}
 
-/* hi */
+.section-1-faq {
+  background-image: url(/assets/Untitled\ design.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 950px;
+}
 
-.pricing-plan {
-  width: 300px;
-  border-radius: 25px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+.faq-heading {
+  font-size: 40px;
+}
+
+.container {
+  width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.accordion-item {
+  background-color: #222;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 0.5rem 2px 0.5rem rgba(0, 0, 0, 0.1);
+}
+
+.accordion-link {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  background-color: #222;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 18px;
+}
+
+.accordion-link i {
+  color: #e7d5ff;
+  padding: 0.5rem;
+}
+
+.accordion-link .ion-md-remove {
+  display: none;
+}
+
+.answer {
   overflow: hidden;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #555555;
-  margin: 15px;
+  max-height: 0;
+  position: relative;
+  background-color: #333;
+  transition: max-height 650ms;
+  border-radius: 10px;
 }
 
-.pricing-plan__header {
-  padding: 25px;
-  background: #009578;
-  color: white;
+.answer::before {
+  content: "";
+  position: absolute;
+  width: 0.6rem;
+  height: 90%;
+  background-color: #09c376;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  border-radius: 5px;
 }
 
-.pricing-plan__title
-.pricing-plan__tagline {
-  margin: 0;
-  text-align: center;
-  
+.answer p {
+  font-size: 1rem;
+  color: rgb(255, 255, 255, 0.6);
+  padding: 1rem;
+  text-align: left;
 }
 
-.pricing-plan__title {
-  font-size: 1.5em;
-  font-weight: 400;
+.accordion-item:target .answer {
+  max-height: 10rem;
 }
+
+.accordion-item:target .accordion-link .ion-md-add {
+  display: none;
+}
+
+.accordion-item:target .accordion-link .ion-md-remove {
+  display: block;
+}
+
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* VV Pricing Cards VV */
+
+
+

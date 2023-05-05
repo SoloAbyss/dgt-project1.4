@@ -1,0 +1,213 @@
+* {
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    color: white;
+    background: #222;
+    padding: 0;
+  }
+
+  
+
+.navbar {
+    height: 5.5vh;
+    background-color: hsla(200, 100%, 0%, 0.4);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    backdrop-filter: blur(9px) brightness(55%);
+    border-bottom: solid 0.5px #666;
+    overflow: hidden;
+    z-index: 3;
+    text-align: center;
+  }
+  
+  #nav-link {
+    float: left;
+    list-style-type: none;
+  }
+  
+  #nav-link a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #nav-link a:hover {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    transition: all ease 0.5s;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+  
+  #nav-link-sign-in {
+    float: right;
+    list-style-type: none;
+  }
+  
+  #nav-link-sign-in a {
+    color: white;
+    padding-left: 10px;
+    padding-right: 30px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  #nav-link-sign-in a:hover {
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    transition: all ease 0.5s;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+  
+  .header-logo {
+    position: fixed;
+    top: -6px;
+    width: 65px;
+    height: 65px;
+    left: 920px;
+  }
+
+  .section-1-servers {
+    background-image: url(/assets/Untitled\ design.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 929px;
+    font-size: 16px;
+  }
+
+  .pricing-plan {
+    width: 300px;
+    border-radius: 25px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555555;
+  }
+
+  .pricing-plan--highlighted {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+    transform: scale(1.05);
+  }
+
+  .pricing-plan__special-text {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+  }
+
+  .pricing-plan__header {
+    padding: 25px;
+    background: #222;
+    color: #ffffff;
+  }
+
+.pricing-plan__title,
+.pricing-plan__summary {
+  margin: 0;
+  text-align: center;
+}
+
+.pricing-plan__title {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.pricing-plan__summary {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.pricing-plan__description {
+  padding: 25px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
+.pricing-plan__list {
+  padding: 0;
+  margin: 0;
+  
+}
+
+.pricing-plan__feature {
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+  
+}
+
+.pricing-plan__feature:not(:last-child) {
+  margin-bottom: 0.5em; 
+}
+
+.pricing-plan__feature::before {
+  content: "\2714";
+  color: #009578;
+  position: absolute;
+  left: 0;
+}
+
+.pricing-plan__actions {
+  padding: 25px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  flex-direction: column; 
+  background: #222;
+}
+
+.pricing-plan__button {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 8px 20px;
+  text-decoration: none;
+  background: #ffffff;
+  color: #222;
+  border-radius: 5px;
+  border: 1px solid #222;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+}
+
+.pricing-plan__button:hover {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #222;
+  transition: all ease 0.2s;
+}
+
+.pricing-plan__cost {
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.pricing-plan__text {
+  font-size: 0.9em;
+  text-align: center;
+  margin: 0 0 10px 0;
+  color: #ffffff;
+}
+
+.pricing-plan-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 100px 100px 100px;
+  
+}

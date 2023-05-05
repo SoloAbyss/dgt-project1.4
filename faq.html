@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SoloHosting | Home</title>
-    <!-- my fonts -->
+    <title>SoloHosting | FAQ</title>
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,38 +12,101 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   </head>
   <body>
-    <div class="row">
-      <div class="column left"></div>
+    <header class="navbar">
+      <ul>
+        <li id="nav-link"><a href="/index.html">Home</a></li>
+        <li id="nav-link"><a href="/faq.html">FAQ</a></li>
+        <li id="nav-link"><a href="/servers.html">Servers</a></li>
+        <li id="nav-link-sign-in">
+          <a href="/signin-signup.html">Login</a>
+        </li>
+        <li id="nav-link-sign-in">
+          <a href="#">Panel</a>
+        </li>
+      </ul>
+      <a href="index.html"></a
+      ><img
+        src="/assets/EXTRA simple sh logo_edited (1).png"
+        alt="Header Logo"
+        class="header-logo"
+      />
+    </header>
 
-      <div class="column middle">
-        <!-- This is the navbar -->
-        <header class="navbar">
-          <ul>
-            <li id="nav-link"><a href="/index.html">Home</a></li>
-            <li id="nav-link"><a href="/faq.html">FAQ</a></li>
-            <li id="nav-link"><a href="/servers.html">Servers</a></li>
-            <li id="nav-link" style="float: right">
-              <a class="active" href="/signin-signup.html">Sign In</a>
-            </li>
-          </ul>
-        </header>
+    <section class="section-1-faq">
+      <h1 class="faq-heading">FAQ</h1>
+      <div class="container">
+        <div class="accordion">
+          <div class="accordion-item" id="question1">
+            <a class="accordion-link" href="#question1">
+              What is a game hosting service?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                A game hosting service is a platform that provides servers for
+                hosting games online. These servers allow players to connect to
+                each other and play games together in real-time.
+              </p>
+            </div>
+          </div>
 
-        <!-- Where all the main content goes -->
-        <main class="main content">
-          <button class="start-now-btn">Start Now</button>
-        </main>
+          <div class="accordion-item" id="question2">
+            <a class="accordion-link" href="#question2">
+              How do I know which hosting plan is right for me?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                The right hosting plan for you depends on the number of players
+                you want to host and the resources you need for your game. Our
+                different hosting plans are designed to cater to different
+                player counts and resource requirements, so choose the one that
+                best suits your needs.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="question3">
+            <a class="accordion-link" href="#question3">
+              Do I need any technical skills to use your game hosting service?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                No, our game hosting service is designed to be user-friendly,
+                even for non-technical users. Our control panel makes it easy to
+                manage your server settings, install game mods, and configure
+                your game settings.
+              </p>
+            </div>
+          </div>
+
+          <div class="accordion-item" id="question4">
+            <a class="accordion-link" href="#question4">
+              Can I upgrade or downgrade my hosting plan later on?
+              <i class="icon ion-md-add"></i>
+              <i class="icon ion-md-remove"></i>
+            </a>
+            <div class="answer">
+              <p>
+                Yes, you can upgrade or downgrade your hosting plan at any time.
+                Simply log in to your account and choose the plan you want to
+                switch to. Our system will automatically adjust your server
+                settings and resources accordingly.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="column right"></div>
-    </div>
+    </section>
 
-    <!-- Footer that doesent work yet -->
-    <footer class="footer-info">
-      <p>
-        Author: Hege Refsnes <br />
-        hege@example.com
-      </p>
-    </footer>
+    <script src="script.js"></script>
+    
   </body>
 </html>

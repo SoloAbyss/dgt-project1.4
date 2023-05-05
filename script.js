@@ -8,3 +8,10 @@ document.getElementById("cards").onmousemove = (e) => {
     card.style.setProperty("--mouse-y", `${y}px`);
   }
 };
+
+var elem = document.querySelector(".main-carousel");
+var flkty = new Flickity(elem, {
+  // options
+  cellAlign: "left",
+  contain: true,
+});

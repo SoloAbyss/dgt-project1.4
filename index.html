@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SoloHosting | Home</title>
-    <!-- my fonts -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,142 +12,196 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
   </head>
-
   <body>
-    <div class="row">
-      <div class="column left"></div>
-
-      <div class="column middle">
-        <!-- This is the navbar -->
-        <header class="navbar">
-          <ul>
-            <li id="nav-link"><a href="/index.html">Home</a></li>
-            <li id="nav-link"><a href="/faq.html">FAQ</a></li>
-            <li id="nav-link"><a href="/servers.html">Servers</a></li>
-            <li id="nav-link" style="float: right">
-              <a class="active" href="/signin-signup.html">Sign In</a>
-            </li>
-          </ul>
-        </header>
-
-        <!-- Where all the main content goes -->
-        <main class="main content">
-          <div class="start-now-container">
-            <a class="start-now-text"
-              >Looking to build your own gaming community? Look no further than
-              Solohosting, the game server hosting service tailored for
-              creators. The platform is user-friendly and provides powerful
-              hardware to easily set up and manage game servers. Additionally,
-              Solohosting offers 24/7 support to ensure a hassle-free
-              experience. Ready to start building? Click the button below.
-            </a>
-          </div>
-
-          <button class="start-now-btn">Start Now</button>
-
-          <div id="cards">
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <i class="fa-duotone fa-apartment"></i>
-                </div>
-                <div class="card-info-wrapper">
-                  <div class="card-info">
-                    <i class="fa-duotone fa-apartment"></i>
-                    <div class="card-info-title">
-                      <h3>High Permormace Servers</h3>
-                      <h4>Catered for creators</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
+    
+    
+    <header class="navbar">
+      <ul>
+        <li id="nav-link"><a href="/index.html"><ion-icon name="home"></ion-icon>  Home</a></li>
+        <li id="nav-link"><a href="/faq.html"><ion-icon name="help-circle"></ion-icon>  FAQ</a></li>
+        <li id="nav-link"><a href="/servers.html"><ion-icon name="cloud"></ion-icon>  Servers</a></li>
+        <li id="nav-link-sign-in">
+          <a href="/signin-signup.html"><ion-icon name="finger-print"></ion-icon>  Login</a>
+        </li>
+        <li id="nav-link-sign-in">
+          <a href="#"><ion-icon name="settings"></ion-icon>  Panel</a>
+        </li>
+      </ul>
+      <img src="/assets/EXTRA simple sh logo_edited (1).png" alt="Header Logo" class="header-logo">
+    </header>
+    
+    <section class="section-1">
+      <h2 class="start-now-statment">Game Hosting for Creators</h2>
+      <p class="start-now-text">
+        Choose Solohosting for a fast, secure, and reliable gaming community
+        hosting service. Our commitment to exceptional support ensures that your
+        game servers are always up, so you can focus on creating and sharing
+        content.
+      </p>
+      <a href="servers.html" style="text-decoration: none"
+        ><button class="start-now-btn" style="text-decoration: none">
+          Get Started
+        </button></a
+      >
+    </section>
+    <section class="section-2">
+      <h1 class="sec2-title">
+        <span class="highlight">Content Creators</span> Have Never Had it
+        Easier. . .
+      </h1>
+      <p class="sec2-paragraph">
+        Our game hosting service simplifies game server management for content
+        creators with powerful features like one-click mod installation, custom
+        server configurations, live streaming integration, and secure backups.
+        This allows creators to focus on engaging with their audience and
+        providing the best possible gaming experience.
+      </p>
+      <div id="cards">
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-apartment"></i>
             </div>
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <i class="fa-duotone fa-unicorn"></i>
-                </div>
-                <div class="card-info-wrapper">
-                  <div class="card-info">
-                    <i class="fa-duotone fa-unicorn"></i>
-                    <div class="card-info-title">
-                      <h3>Unicorns</h3>
-                      <h4>A single corn. Er, I mean horn.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <i class="fa-duotone fa-blender-phone"></i>
-                </div>
-                <div class="card-info-wrapper">
-                  <div class="card-info">
-                    <i class="fa-duotone fa-blender-phone"></i>
-                    <div class="card-info-title">
-                      <h3>Blender Phones</h3>
-                      <h4>These absolutely deserve to exist.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <i class="fa-duotone fa-person-to-portal"></i>
-                </div>
-                <div class="card-info-wrapper">
-                  <div class="card-info">
-                    <i class="fa-duotone fa-person-to-portal"></i>
-                    <div class="card-info-title">
-                      <h3>Adios</h3>
-                      <h4>See you...</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <i class="fa-duotone fa-person-from-portal"></i>
-                </div>
-                <div class="card-info-wrapper">
-                  <div class="card-info">
-                    <i class="fa-duotone fa-person-from-portal"></i>
-                    <div class="card-info-title">
-                      <h3>I mean hello</h3>
-                      <h4>...over here.</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-content">
-                <div class="card-image">
-                  <i class="fa-duotone fa-otter"></i>
-                </div>
-                <div class="card-info-wrapper">
-                  <div class="card-info">
-                    <i class="fa-duotone fa-otter"></i>
-                    <div class="card-info-title">
-                      <h3></h3>
-                      <h4>Catered for creators</h4>
-                    </div>
-                  </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-apartment"></i>
+                <div class="card-info-title">
+                  <h3>
+                    Want to easily install mods and plugins without
+                    compatibility issues?
+                  </h3>
+                  <h4>Our one-click mod installation has got you covered!</h4>
                 </div>
               </div>
             </div>
           </div>
-        </main>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-unicorn"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-unicorn"></i>
+                <div class="card-info-title">
+                  <h3>
+                    Need a customizable game server to fit your unique gameplay
+                    style and audience?
+                  </h3>
+                  <h4>
+                    Our custom server config lets you tailor your gameplay
+                    experience.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-blender-phone"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-blender-phone"></i>
+                <div class="card-info-title">
+                  <h3>
+                    Looking to connect with your audience in real-time through
+                    live streaming?
+                  </h3>
+                  <h4>
+                    Our live streaming integration with chat and donation alerts
+                    makes it easy.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-person-to-portal"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-person-to-portal"></i>
+                <div class="card-info-title">
+                  <h3>
+                    Worried about losing your game server data due to accidents
+                    or server crashes?
+                  </h3>
+                  <h4>
+                    Our backups and restore points feature ensures your precious
+                    creations are always secure.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-person-from-portal"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-person-from-portal"></i>
+                <div class="card-info-title">
+                  <h3>
+                    Need a user-friendly and intuitive interface to manage your
+                    game server settings?
+                  </h3>
+                  <h4>
+                    Our web-based control panel makes it easy to manage mods,
+                    plugins, and player activity.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <div class="card-image">
+              <i class="fa-duotone fa-otter"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                <i class="fa-duotone fa-otter"></i>
+                <div class="card-info-title">
+                  <h3>
+                    Want to create custom web apps, tools, and integrations for
+                    your community?
+                  </h3>
+                  <h4>
+                    Our API integration gives you the power to build amazing
+                    experiences for your players.
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="column right"></div>
-    </div>
+    </section>
+    <section class="section-3"></section>
+    <section class="section-4">
+      <h1>Test</h1>
+      <p>
+        Doloribus eaque reiciendis assumenda veritatis dolorum porro ipsa
+        repellat, vero pariatur at dolorem nobis, laboriosam alias quibusdam
+        impedit autem consequatur tempore consequuntur enim sed possimus neque
+        aperiam a! Eveniet, quasi!
+      </p>
+    </section>
     <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

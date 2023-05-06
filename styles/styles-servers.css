@@ -93,6 +93,7 @@
     font-size: 16px;
     line-height: 1.5;
     color: #555555;
+    margin: 15px;
   }
 
   .pricing-plan--highlighted {
@@ -202,12 +203,13 @@
   text-align: center;
   margin: 0 0 10px 0;
   color: #ffffff;
+  
 }
 
 .pricing-plan-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 100px 100px 100px 100px;
+  padding: 200px 100px 100px 100px;
   
 }

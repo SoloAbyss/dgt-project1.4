@@ -23,7 +23,7 @@ section {
 }
 
 .section-1 {
-  background-image: url(/assets/Untitled\ design.png);
+  background-image: url(/assets/Untitled-design.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -143,7 +143,7 @@ section {
 }
 
 .highlight {
-  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  background-image: url(/assets/Untitled-design.png);
   border-radius: 20px;
   color: #111;
 }
@@ -359,7 +359,7 @@ i {
 }
 
 .section-1-faq {
-  background-image: url(/assets/Untitled\ design.png);
+  background-image: url(/assets/Untitled-design.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 950px;
@@ -451,7 +451,9 @@ html {
   box-sizing: border-box;
 }
 
-/* VV Pricing Cards VV */
-
-
-
+.highlight1 {
+  background-image: url(/assets/Untitled-design.png);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -23,7 +23,7 @@ section {
 }
 
 .section-1 {
-  background-image: url(/assets/Untitled\ design.png);
+  background-image: url(../assets/background-image.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -359,7 +359,7 @@ i {
 }
 
 .section-1-faq {
-  background-image: url(/assets/Untitled\ design.png);
+  background-image: url(../assets/background-image.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 950px;
